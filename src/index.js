@@ -23,30 +23,31 @@
 //Ao final deve se exibir uma mensagem:
 //"O Herói de nome **{nome}** está no nível de **{nivel}**"
 
-let herói = "Theks";
-let xp = 11.000;
+let heroi = "Theks";
+let xp = 0;
 let ranking = "";
 
-if (xp <= 1000){
-    ranking = ferro;
-}   
-else
-    if (xp >= 2.001 && 5.000)
-   ranking = bronze;
-else 
-    if (xp >= 5.001 && 6.000)
-   ranking = Prata;
-   else 
-   if (xp >= 6.001 && 7.000)
-  ranking = ouro;
-  else 
-  if (xp >= 7.001 && 8.000)
- ranking = platina;
- else 
- if (xp >= 8.001 && 9.000)
-ranking = Ascendente;
-else 
-    if (xp >= 9.001 && 10.000)
-   ranking = Radiante;
+while (xp <=1){
+    xp = Math.floor(Math.random() * 13.000);
+}
 
-   console.log("nome do herói: " + herói && "ranking " == xp);
+    if(xp <= 1.000){
+        ranking = "Ferro"
+    } else if(xp >= 1.001 && xp <= 2.000){
+        ranking = "Bronze"
+    } else if(xp >= 2.001 && xp <= 5.000){
+        ranking = "Prata"
+    } else if(xp >= 5.001 && xp<= 7.000){
+        ranking= "Ouro"
+    } else if(xp >= 7.001 && xp <= 8.000){
+        ranking = "Platina"
+    } else if(xp >= 8.001 && xp <= 9.000){
+        ranking = "Ascendente"
+    } else if(xp >= 9.001 && xp <= 10.000){
+        ranking = "Imortal"
+    } else {
+        ranking = "Radiante"
+    }
+
+    
+   console.log("o heroi " + heroi + " jogou sua md10 e está ranking " + ranking );
